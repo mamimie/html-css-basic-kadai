@@ -2,8 +2,15 @@ html {font-size: 20px;}
 
 body {
     text-align: center;
-    font-style: "Arial", "Meiryo", sans-serif;
+    font-family: "Arial", "Meiryo", sans-serif;
     font-size: 20px;
+}
+
+.google-fonts {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .blue {
