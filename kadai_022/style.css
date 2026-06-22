@@ -1,0 +1,125 @@
+h1 {
+    margin: 0;
+    color: rgb(255,255,255);
+}
+
+p {
+    margin: 0;
+    font-size: 20px;
+    color: black;
+}
+
+@media (screen) and (min-width:768px) {
+    p {
+        font-size: 25px;
+    }
+}
+
+a {
+    font-size: 20px;
+    color: black;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* ヘッダー */
+
+header {
+    margin: 20px;
+    background-color: rgb(244, 79, 79);
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+/* メイン */
+
+main {
+    margin: 10px;
+}
+
+#parent {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: row;
+}
+
+@media screen and (max-width:768px) {
+    #parent {
+        display: inline-block;
+    }
+}
+
+.contents {
+    border: 3px solid rgb(238, 204, 204);
+    color: rgb(238, 204, 204);
+    flex-basis: 25%;
+    padding: 10px 15px;
+    margin: 20px 0;
+    text-align: center;
+    display: inline-block;
+}
+
+.contents img {
+    display: inline-block;
+    justify-content: space-around;
+    align-items: center;
+}
+
+p:nth-of-type(2):first-letter {
+    font-weight: bold;
+    color: rgb(97, 206, 249);
+}
+
+h2 {
+    font-size: 25px;
+    color: black;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-style: dotted;
+    text-decoration-color: rgb(236, 122, 122);
+    position: relative;
+    padding-left: 20px;
+    display: inline-block;
+}
+
+h2::before {
+    content: '●';
+    position: absolute;
+    left: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(239, 111, 139);
+}
+
+@media screen and (max-width: 768px){
+    h2 {
+        font-size: 30px;
+    }
+}
+
+img {
+    margin: 10px 0;
+    width: 70%;
+    flex-wrap: wrap;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(244, 79, 79)
+}
+
+a {
+    color: rgb(255, 255, 255);
+}
+
+a:visited {
+    color: rgb(193, 234, 251)
+}
+
+a:hover {
+    color: rgb(245, 178, 168);
+}
